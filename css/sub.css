@@ -1,0 +1,205 @@
+@charset "UTF-8";  /* 문자인코딩방식 UTF-8로 지정해야 한글이 정상적으로 나옴 */
+
+/* 나눔고딕 cdn - daum에서 가져옴 */
+@import url(http://ts.daumcdn.net/custom/blog/0/606/skin/images/nanumgothic.css);
+
+
+/* reset  - style.css에 설명되어있음 */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background: #fff;
+  font-family: 'Nanum Gothic'
+}
+
+a {
+  text-decoration: none;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+/* 전체 레이아웃 */
+#wrap {
+  width: 100%;
+  min-width: 1400px;
+}
+/* header */
+#wrap header {
+  width: 100%;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.9);
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+#wrap header .headerInner {
+  width: 1400px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#wrap header h1.logo {
+  width: 20%;
+}
+
+#wrap header h1.logo img {
+  width: 150px;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+
+#wrap header .menu {
+  width: 80%;
+}
+
+#wrap header .menu ul {
+  width: 750px;
+  display: flex;
+  justify-content: space-between;
+  float: right;
+}
+
+#wrap header .menu ul li {
+  margin-left: 2%;
+  margin-top: 35px;
+}
+
+#wrap header .menu ul li a {
+  color: #004C98;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#wrap header .menu ul li a:hover,
+#wrap header .menu ul li a:focus {
+  text-decoration: underline;
+  color: #0172bb;
+}
+
+
+
+
+
+/* 서브 컨텐츠 영역 */
+
+
+#wrap section {
+  margin-bottom: 50px;
+}
+
+/* sub img - 각 서브페이지 6종 이미지 연결 */
+
+#wrap section .academics {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  z-index: -1;
+  background: url("../images/sub/sub_visual-1.jpg") center/cover;
+}
+
+#wrap section .campus {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  z-index: -1;
+  background: url("../images/sub/sub_visual-2.jpg") center/cover;
+}
+
+#wrap section .inFocus {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  z-index: -1;
+  background: url("../images/sub/sub_visual-3.jpg") center/cover;
+}
+
+#wrap section .visit {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  z-index: -1;
+  background: url("../images/sub/sub_visual-4.jpg") center/cover;
+}
+
+#wrap section .about {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  z-index: -1;
+  background: url("../images/sub/sub_visual-5.jpg") center/cover;
+}
+
+#wrap section .news {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  z-index: -1;
+  background: url("../images/sub/sub_visual-6.jpg") center/cover;
+}
+
+
+/* 서브 하단 글자 스타일 */
+
+#wrap section .text {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+#wrap section .text h2 {
+  padding: 40px 0 40px 0;
+  margin-bottom: 50px;
+  font-size: 30px;
+  color: #004C98;
+  border-bottom: 1px solid #ddd; /* 글자 하단에 회색 라인 지정 */
+}
+
+#wrap section .text p.title {
+  color: #0172bb;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold; /* 글자 굵게 지정 */
+}
+
+#wrap section .text p {
+  padding: 20px 0 20px 0; /* 안쪽 여백 순서 - 상단,오른쪽,하단,왼쪽 */
+  font-size: 15px;
+  color: #000;
+  line-height: 1.7; /* 각 내용의 행 높이 지정 */
+  text-align: justify; /* 글자의 정렬방식 - 좌우 딱 맞게 지정 */
+}
+
+
+
+
+
+
+/* footer - style.css에 설명되어있음 */
+
+#wrap footer {
+  width: 100%;
+  height: 80px;
+  border-top: 1px solid #fff;
+  background: linear-gradient(45deg, #4abfee, #0172bb);
+}
+
+#wrap footer p {
+  color: #fff;
+  text-align: center;
+  padding-top: 30px;
+}
